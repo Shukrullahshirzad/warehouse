@@ -1,0 +1,43 @@
+@channel
+
+ /*
+ * a simple warehouse project
+ *
+ * It is a warehouse application that is a system implemented in a working factory.
+ *
+ * 1-) Here, the product definition is made first. //pojoProduct
+ id
+ productName
+ manufacturer
+ quantity
+ unit and
+ shelf (6 fields are available)
+ *
+ * 2-) We will create methods.
+ * productDefinition ==> the name, manufacturer and unit of the product will be entered. id will be taken. //MAP<id,pojoProduct> SHELF="-" and Quantity=0 //arraylist
+ *
+ * List product ==> the defined products will be listed. If the quantity and shelf number of the product are not defined, the default value will be displayed.
+ * /// printf(%10)
+ * productInput ==> we will enter the id number of the product we want to enter.
+ *
+ * PutProductOnShelve ==> we will select the product from the list and put the product on the shelf according to the id number.
+ *
+ * ProductExit ==> we will select the product from the list and exit the product. Here, only the quantity will be changed from the product list.
+ * The product quantity cannot be less than 0. When it is 0, the product definition should not be deleted. Only the quantity should be 0. ///exception
+ * ===> all the changes we make should be visible in the list.
+ * * * id - name - manufacturer - quantity - unit - shelf * ---------------------------- * 1000 - Flour - hekimoglu -     0  -   sack - null * *
+ productEntry ==> id:1000 product entry: 5 *
+
+ productList ==> * * id - name -  manufacturer - quantity - unit - shelf *
+                    1000 - Flour - hekimoglu   -    5    -   sack - null *
+
+ * Put the product on the Shelf
+ ==> id:1000 shelf: Shelf1 Flour)
+
+ * productList ==>
+ *
+    id - name  - manufacturer  - quantity - unit -  shelf
+ * 1000 - flour  -   hekimoglu    -   2   -   sack  -  shelf1
+ *
+ *
+ */vvvvvv
